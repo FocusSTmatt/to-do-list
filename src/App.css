@@ -16,10 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 5em;
+  padding-top: 1em;
   align-items: center;
   width: 90%;
-  height: 100%;
+  height: 100vh;
 }
 
 .task {
@@ -35,17 +35,17 @@ input {
   height: 23px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  border: none;
+  border: 2px solid blue;
   padding-left: 1em;
 }
 
 .addTaskBtn {
-  height: 25px;
+  height: 27px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   background: rgb(38, 38, 107);
   color: #fff;
-  border: none;
+  border: 2px solid blue;
 }
 
 .task button {
