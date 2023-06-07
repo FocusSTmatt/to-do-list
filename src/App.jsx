@@ -27,14 +27,15 @@ function App(e) {
   return (
     <>
       <div className='App'>
+        <h1>My Task List</h1>
         <div className='addTask'>
           <input onChange={handleChange} />
-          <button onClick={addTask}>Add Task</button>
+          <button className='addTaskBtn' onClick={addTask}>Add Task</button>
         </div>
         <div className='list'>
           {todoList.map(( task ) => {
             return (
-            <div key={task}>
+            <div className='task' key={task}>
               <h1>{task.taskName}</h1>
               <button onClick={() => removeTaskItem(task.id)}> X </button>
             </div>  

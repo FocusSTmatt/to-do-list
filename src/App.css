@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(./assets/paper-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Cedarville Cursive', cursive;
+  color: rgb(72, 72, 168);
+
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 5em;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+
+.task {
+  display: flex;
+  flex-direction: row !important;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3em;
+}
+
+input {
+  height: 23px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+  padding-left: 1em;
+}
+
+.addTaskBtn {
+  height: 25px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgb(38, 38, 107);
+  color: #fff;
+  border: none;
+}
+
+.task button {
+  height: 50px;
+  min-width: 50px !important;
+  margin-left: 2em;
+  border-radius: 50px;
+  background: red;
+  color: white;
+  border: none;
+}
+
+.App h1 {
+  font-size: 50px;
+}
+
+.task {
+  margin-top: 2em;
+}
+
+.task h1 {
+  font-size: 50px;
+  margin: 0 1em;
+}
+
+@media screen and (max-width: 400px) {
+  .App h1 {
+    font-size: 40px;
+  }
+  .task {
+    margin-top: 0;
+  }
+  .task h1 {
+    font-size: 40px;
+  }
+  .task button {
+    height: 30px;
+    min-width: 30px !important;
+    margin-left: 3em;
+    border-radius: 50px;
+  }
+}
